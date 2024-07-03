@@ -1,0 +1,22 @@
+@use "../global/forward" as*;
+
+.footer {
+	background: $text-color;
+	padding: 29px 0 30px 0;
+
+	.footer__small {
+		font-size: 20px;
+		color: $main-color;
+		display: block;
+		text-align: center;
+		
+		@include mq(md) {
+			font-size: 17px;
+		}
+
+		& span {
+			text-transform: uppercase;
+		}
+	}
+	
+}

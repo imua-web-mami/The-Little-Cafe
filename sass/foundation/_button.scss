@@ -1,0 +1,17 @@
+@use "../global/forward" as*;
+
+.button {
+	display: grid;
+	place-content: center;
+	width: 250px;
+	height: 55px;
+	background-color: $text-color;
+	font-size: 25px;
+	color: $main-color;
+	text-transform: uppercase;
+
+	@include mq(md) {
+		width: 315px;
+	}
+
+}

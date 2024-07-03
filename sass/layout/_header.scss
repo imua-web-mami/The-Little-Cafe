@@ -1,0 +1,41 @@
+@use "../global/forward" as*;
+
+.header {
+	background: $main-color;
+	height: 50px;
+
+	.header__contents {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		
+		.header__logo {
+			text-transform: uppercase;
+
+			@include mq(md) {
+				margin-left: -10px;
+			}
+		}
+
+		.header__nav-list {
+			display: flex;
+			flex-direction: row;
+
+			.header__nav-item a {
+				margin-left: 35px;
+				text-transform: uppercase;
+			}
+
+			@include mq(md) {
+				display: none;
+			}
+		}
+		
+	}
+	
+	.header__contents a {
+		font-size: 20px;
+		color: $text-color;
+	}
+}

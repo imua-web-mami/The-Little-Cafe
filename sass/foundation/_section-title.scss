@@ -1,0 +1,19 @@
+@use "../global/forward" as*;
+
+.section-title {
+	font-size: 30px;
+	line-height: 45px;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+}
+.section-title::after {
+	content: "";
+	width: 50px;
+	height: 2px;
+	background: $text-color;
+	position: absolute;
+	bottom: -7.5px;
+	left: 50%;
+	transform: translateX(-50%);
+}
